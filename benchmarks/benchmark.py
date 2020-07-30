@@ -29,7 +29,7 @@ def report_benchmark(benchmarks, num_elems, runs, repeat):
 
     table = []
     for n in num_elems:
-        print(f"Benchmarking {n} elements ...")
+        print(f"Sampling {n} elements ...")
         for b in benchmarks:
             b.set_num(n)
         res = [np.mean(timeit.repeat(
